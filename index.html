@@ -10,12 +10,40 @@
 </head>
 <body> 
     <p>Le volume du cylindre est : <span id="resultat"></span></p>
+
+    <div class="classdiv" id = "div1"></div>
+    <div class="classdiv" id = "div4"></div>
+    <div class="classdiv" id = "div2"></div>
+    <div class="classdiv" id = "div3"></div>
+
+    <ul>
+        <li class="important">IMPORTANT 1</li>
+        <li class="important">IMPORTANT 2</li>
+        <li class="important">IMPORTANT 3</li>
+        <li class="important">IMPORTANT 4</li>
+        <li class="important">IMPORTANT 5</li>
+    </ul>
+
     <script>
-    let rayon = prompt("Entrez le rayon du cylindre :");
-    let hauteur = prompt("Entrez la hauteur du cylindre :");
-    let Vol = CalculerVolume(rayon,hauteur);
-    console.log(Vol);
-    document.getElementById("resultat").innerText = Vol;
+
+   let EltsImp = document.getElementsByClassName("important");
+    console.log(EltsImp);
+
+
+
+    let EltsDiV = document.getElementsByClassName("classdiv");
+    console.log(EltsDiV);
+
+
+
+   // let rayon = prompt("Entrez le rayon du cylindre :");
+   // let hauteur = prompt("Entrez la hauteur du cylindre :");
+   // let Vol = CalculerVolume(rayon,hauteur);
+   // console.log(Vol);
+  //  for (i = 0;i<10;i++){
+  //      document.getElementById("resultat").innerText = Vol;
+ //   }
+    
     </script>
     
 </body>
