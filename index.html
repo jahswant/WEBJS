@@ -8,21 +8,16 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
-<body>
+<body> 
+    <p>Le volume du cylindre est : <span id="resultat"></span></p>
     <script>
-
-    function CalculerVolume(Rayon,Hauteur){
-    let V =  3.14*(Rayon*Rayon) * Hauteur;
-    return V;
-    }
-
     let rayon = prompt("Entrez le rayon du cylindre :");
     let hauteur = prompt("Entrez la hauteur du cylindre :");
     let Vol = CalculerVolume(rayon,hauteur);
     console.log(Vol);
     document.getElementById("resultat").innerText = Vol;
     </script>
-
+    
 </body>
-<p>Le volume du cylindre est : <span id="resultat"></span></p>
+
 </html>
